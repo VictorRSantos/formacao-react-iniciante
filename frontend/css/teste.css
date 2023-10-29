@@ -1,0 +1,82 @@
+/* 
+Exemplos de seletores Tipos 
+
+Tag : h1{}
+Classe: .box{}
+ID: #unique{}
+
+Seletores de atributos
+a[tittle]{}
+a[href="https://exemple.com"]{}
+
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 32px;
+  color: red;
+}
+
+.red {
+  color: red;
+}
+
+#email {
+  border: 0;
+  background-color: #3ac228;
+}
+
+/* Flexbox */
+.flex {
+  display: flex;
+  width: 100%;
+}
+
+.item {
+  width: 80px;
+  height: 80px;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Pseudo-classes e elementos */
+
+button:hover {
+  /* Qualquer botão sobre qual o ponteiro do usuário esteja passando sobre */
+  color: blue;
+}
+
+.item:hover {
+  background-color: brown;
+}
+
+.item:first-child:hover,
+.item:last-child:hover {
+  background-color: green;
+}
+
+input:focus {
+  border-color: red;
+  background: gray;
+}
+
+/* Media Queries 
+Utilizando Media Queries
+*/
+
+@media (max-width: 450px) {
+  body {
+    background-color: green;
+  }
+}

@@ -6,6 +6,56 @@
     <meta name="author" content="Victor R. Santos" />
     <!--<meta http-equiv="refresh" content="2;url=https://google.com">-->
     <title>Primeira página</title>
+    <style>
+      body{
+        background-color: blue;
+      }
+
+      .flex{
+        display: flex;
+        width: 100%;
+       
+      }
+      .item{
+        width: 80px;
+        height: 80px;
+        background-color: blueviolet;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+      }
+    
+      .item:hover{
+        background-color: brown;        
+      }
+
+      .item:first-child:hover, 
+      .item:last-child:hover{
+        background-color: green; 
+      }
+
+      input:focus{
+        border-color: red;
+        background: gray;
+      }
+
+      
+      @media (max-width:450px)
+      {
+        body
+        {
+          background-color: green;
+        }
+
+        .flex{
+          flex-direction: column;          
+        }
+      }
+
+    </style>
   </head>
   <body>
     <h2>Tag Link</h2>
@@ -111,7 +161,7 @@
     <div>
       <form action="" method="post">
         <div>
-          <label for="nome">Nome:</label>
+          <label for="nome" class="red">Nome:</label>
           <br />
           <input type="text" id="nome" name="nome" />
         </div>
@@ -121,14 +171,24 @@
           <input type="text" id="email" name="email" />
         </div>
         <div>
-          <label for="msg">Mensagem:</label>
+          <label for="msg" class="red">Mensagem:</label>
           <br />
-          <textarea type="text" id="msg" name="mensaem"></textarea>
+          <textarea type="text" id="msg" name="mensagem" ></textarea>
         </div>
         <div>
           <button>Enviar</button>
         </div>
       </form>
     </div>
+    <br />
+    <hr />
+
+    <h2>Flebox</h2>
+    <div class="flex">
+      <div class="item">a</div>
+      <div class="item">b</div>
+      <div class="item">c</div>
+    </div>
+  
   </body>
 </html>
