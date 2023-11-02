@@ -158,7 +158,6 @@ const idades = alunos.reduce((acc, aluno)=>{
 console.log("Soma de idades", idades)
 
 
-
 //Some
 const acimaDeNove = alunos.some(alunos => alunos.idade < 10)
 console.log("acimaDeNove", acimaDeNove)
@@ -166,3 +165,17 @@ console.log("acimaDeNove", acimaDeNove)
 //Every
 const menoQueNoventa = alunos.every(alunos => alunos.idade < 90)
 console.log("menoQueNoventa", menoQueNoventa)
+
+
+//Manipulando a DOM
+window.document.getElementById("title");
+window.document.getElementById("title").remove();
+
+window.document.getElementsByTagName("div");
+window.document.getElementsByTagName("div").remove();
+
+window.document.querySelector("div");
+window.document.querySelectorAll("div");
+window.document.querySelectorAll("#title");
+window.document.querySelectorAll("input[name]");
+window.document.querySelectorAll(".item, .flex");
